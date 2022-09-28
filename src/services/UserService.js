@@ -3,7 +3,7 @@ export async function getAllUsers() {
 
     try {
         const response = await fetch(`${process.env.REACT_APP_API1_URL}/api/users`);
-        return await response.json();
+        return await response.json().users;
     } catch (error) {
         return [];
     }
