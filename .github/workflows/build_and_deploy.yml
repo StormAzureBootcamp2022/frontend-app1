@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: npm run build --if-present
         env:
-          REACT_API1_URL: 'https://app-storm-chaos-customer-api-app1-single.azurewebsites.net'
+          REACT_APP_API1_URL: 'https://app-storm-chaos-customer-api-app1-single.azurewebsites.net'
 
       - name: Zip Folder
         run: zip -r ../release.zip *
